@@ -1,6 +1,5 @@
 #!/bin/bash
 
-read -p "Press enter to continue"
 exec > >(tee -i $HOME/dotfiles_install.log)
 exec 2>&1
 set -x
