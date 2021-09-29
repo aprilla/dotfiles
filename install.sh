@@ -11,3 +11,7 @@ ln -s $(pwd)/emacs $HOME/.emacs
 ln -s $(pwd)/screenrc $HOME/.screenrc
 
 vim -Es -u $HOME/.vimrc -c "PlugInstall | qa"
+
+alias tmux-dev="tmux new-session \; \
+  split-window -v \; \
+  split-window -h \; "
