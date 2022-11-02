@@ -5,6 +5,7 @@ exec 2>&1
 set -x
 
 sudo chsh -s /bin/zsh $(whoami)
+sudo apt-get update && sudo apt-get -y upgrade tmux
 
 ln -s $(pwd)/tmux.conf $HOME/.tmux.conf
 ln -s $(pwd)/vimrc $HOME/.vimrc
